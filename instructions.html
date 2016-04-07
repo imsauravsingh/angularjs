@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style>
+video {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+	border: solid 1px #eee;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+	font-family: Verdana;
+	    font-size: 12px;
+}
+h1 {
+    font-size: 13px;
+    background-color: #eee;
+}
+h2 {
+    font-size: 12px;
+    color: #00f;
+}
+</style>
+
+<body>
+<div class="container">
+
+<video controls="controls">
+  <source src="video.webm" type="video/webm">
+</video>
+
+<div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>No need to save the state to database of those changes:<br />
+    - Undo information.<br />
+    - The current filter<br />
+    - Which order is active.</p>
+  <p>
+<br />  
+  <h1>http://script.3utilities.com/?fetch</h1>
+    <h2>Request Parameters</h2><br />
+  <strong>table_id</strong> – your unique table id will be provided to  you. (post or get)<br />
+    <h2>Response</h2><br />
+     <code>
+    [{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Pepper&quot;,&quot;attr1&quot;:null,&quot;attr2&quot;:null,&quot;attr3&quot;:null},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Grapefruit&quot;,&quot;attr1&quot;:null,&quot;attr2&quot;:null,&quot;attr3&quot;:null}….]</code></p>
+  <p>
+  <h1>http://script.3utilities.com/?update</h1>
+  <h2>Request  Parameters</h2><br />
+  <strong>table_id</strong> – your unique table id will be provided to  you. (post or get)<br />
+  <strong>data </strong>– single or multiple items to update<strong> </strong>in<strong> </strong>json format (post or get)<br />
+    Example:<br />
+    <code>
+    [{&quot;id&quot;:&quot;10&quot;,&quot;attr1&quot;:&quot;9&quot;,&quot;attr2&quot;:&quot;8&quot;,&quot;attr3&quot;:&quot;&quot;},{&quot;id&quot;:&quot;11&quot;,&quot;attr1&quot;:&quot;3&quot;,&quot;attr2&quot;:&quot;&quot;,&quot;attr3&quot;:&quot;&quot;}]</code><br />
+    <h2>Response</h2><br />
+  &ldquo;Ok&rdquo; /  &ldquo;Error&rdquo;</p>
+</div>
+
+
+</div>
+</body>
+</html>
